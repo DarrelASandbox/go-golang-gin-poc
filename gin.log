@@ -2,29 +2,17 @@
  - using env:	export GIN_MODE=release
  - using code:	gin.SetMode(gin.ReleaseMode)
 
-[GIN-debug] GET    /videos                   --> main.main.func1 (4 handlers)
-[GIN-debug] POST   /videos                   --> main.main.func2 (4 handlers)
+[GIN-debug] GET    /css/*filepath            --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (1 handlers)
+[GIN-debug] HEAD   /css/*filepath            --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (1 handlers)
+[GIN-debug] Loaded HTML Templates (4): 
+	- 
+	- footer.gohtml
+	- header.gohtml
+	- index.gohtml
+
+[GIN-debug] GET    /api/videos               --> main.main.func1 (4 handlers)
+[GIN-debug] POST   /api/videos               --> main.main.func2 (4 handlers)
+[GIN-debug] GET    /view/videos              --> github.com/DarrelASandbox/go-golang-gin-poc/controller.VideoController.ShowAll-fm (4 handlers)
 [GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
 Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
 [GIN-debug] Listening and serving HTTP on :4000
-ClientIP:::1 - [21 Sep 22 13:13 +08]
-POST Path:/videos
-StatusCode:400 2.7858ms
-ClientIP:::1 - [21 Sep 22 13:13 +08]
-POST Path:/videos
-StatusCode:400 0s
-ClientIP:::1 - [21 Sep 22 13:14 +08]
-POST Path:/videos
-StatusCode:400 804.6µs
-ClientIP:::1 - [21 Sep 22 13:14 +08]
-POST Path:/videos
-StatusCode:400 521.8µs
-ClientIP:::1 - [21 Sep 22 13:14 +08]
-POST Path:/videos
-StatusCode:400 0s
-ClientIP:::1 - [21 Sep 22 13:14 +08]
-POST Path:/videos
-StatusCode:400 734.4µs
-ClientIP:::1 - [21 Sep 22 13:15 +08]
-POST Path:/videos
-StatusCode:200 199.8µs
